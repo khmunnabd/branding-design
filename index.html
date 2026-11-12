@@ -53,4 +53,4 @@ function show(n){i=(n+slides.length)%slides.length;im.src=slides[i].src;im.alt=s
 function stop(){clearInterval(t);playing=false;toggle.textContent='▶'}function start(){clearInterval(t);t=setInterval(()=>show(i+1),4200);playing=true;toggle.textContent='Ⅱ'}
 document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);toggle.onclick=()=>playing?stop():start();start();
 const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');ob.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>ob.observe(e));
-</script></body></html>
+</script></body></html> 
