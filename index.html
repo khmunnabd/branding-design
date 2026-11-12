@@ -4,8 +4,8 @@
 <style>
 :root{--g:#004C46;--lime:#5ABA47;--y:#FFDA00;--o:#FF5C35;--paper:#f4f7f4;--ink:#153b36}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--g);color:#fff;font-family:Montserrat,Arial,sans-serif}
-header{position:fixed;z-index:9;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;padding:17px 5vw;background:#003d38dc;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff22}
-.brand{font-weight:800;font-size:12px;letter-spacing:.14em}nav{display:flex;gap:22px;font-size:14px;font-weight:700}nav a{color:white;text-decoration:none}nav a:hover{color:var(--y)}
+header{position:fixed;z-index:9;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;gap:28px;padding:20px 5vw;background:#003d38f2;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff22}
+.brand{font-weight:800;font-size:14px;letter-spacing:.12em;color:#fff;text-decoration:none;white-space:nowrap}nav{display:flex;align-items:center;gap:30px;font-size:16px;font-weight:700}nav a{color:white;text-decoration:none;white-space:nowrap;transition:color .2s}nav a:hover{color:var(--y)}
 .hero{min-height:92vh;padding:125px 7vw 75px;display:grid;grid-template-columns:1.1fr .8fr;gap:5vw;align-items:center;overflow:hidden;background:radial-gradient(circle at 80% 25%,#5aba4728,transparent 34%),linear-gradient(130deg,#003b36,var(--g))}
 .kicker,.eyebrow{font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--y)}
 h1{font-size:clamp(42px,6vw,82px);line-height:.98;letter-spacing:-.055em;margin:20px 0}h2{font-size:clamp(32px,4.6vw,56px);line-height:1.05;letter-spacing:-.045em;margin:13px 0 22px}
@@ -22,10 +22,10 @@ section{padding:88px 7vw}.light{background:var(--paper);color:var(--ink)}.light 
 footer{padding:38px 7vw;background:#002e29;color:#b8cec8;font-size:11px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
 .reveal{opacity:0;transform:translateY(25px);transition:.75s}.reveal.show{opacity:1;transform:none}
 @keyframes float{50%{transform:translateY(-12px)}}@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:115px}.hero-art{max-width:440px}.grid{grid-template-columns:1fr}.gallery,.videos,.reels{grid-template-columns:1fr}.slidehead{display:block}.viewer img{height:auto;max-height:65vh}}
-@media(max-width:520px){header{padding:14px 4vw}.brand{font-size:9px}nav{gap:10px;font-size:9px}nav a:nth-child(2){display:none}section{padding:65px 6vw}.hero{padding-left:6vw;padding-right:6vw}.caption{display:block}.controls{margin-top:10px}}
+@media(max-width:700px){header{padding:14px 4vw;gap:12px;flex-wrap:wrap}.brand{font-size:11px}nav{width:100%;justify-content:space-between;gap:10px;font-size:12px}section{padding:65px 6vw}.hero{padding-left:6vw;padding-right:6vw}.caption{display:block}.controls{margin-top:10px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 </style></head><body>
-<header><div class="brand">KHALED HASAN MUNNA / VISUAL PORTFOLIO</div><nav><a href="https://sites.google.com/view/khaled-hasan-munna">Home</a><a href="#photos">Photos</a><a href="#story">Branding &amp; Design</a><a href="https://sites.google.com/view/khaled-hasan-munna/about?authuser=0">About</a></nav></header>
+<header><a class="brand" href="https://sites.google.com/view/khaled-hasan-munna">KHALED HASAN MUNNA / VISUAL PORTFOLIO</a><nav aria-label="Main navigation"><a href="https://sites.google.com/view/khaled-hasan-munna">Home</a><a href="#photos">Photos</a><a href="#story">Branding &amp; Design</a><a href="https://sites.google.com/view/khaled-hasan-munna/about?authuser=0">About</a></nav></header>
 <section class="hero" id="top"><div class="reveal"><div class="kicker">Branding · Visual Communication · Design</div><h1>Building a visual identity that feels like <span style="color:#5ABA47">one story.</span></h1>
 <p>Selected branding and design work from my time at International School Dhaka — connecting institutional values, visual consistency and everyday communications across print and digital touchpoints.</p><a class="cta" href="#story">EXPLORE THE BRAND STORY ↓</a></div>
 <div class="hero-art reveal"><img src="assets/guideline-01.jpg" alt="ISD Brand Identity Guidelines"><div class="label">International School Dhaka<br>Brand identity · March 2025</div></div></section><div class="stripe"></div>
